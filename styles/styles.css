@@ -39,8 +39,8 @@ nav {
 }
 
 nav button {
-    height: 5rem;
-    width: 8rem;
+    height: 3rem;
+    width: 6rem;
     margin: auto;
     border-style: ridge;
     border-width: 0.2rem;
@@ -53,8 +53,8 @@ nav button:hover {
 }
 
 nav .nav-button {
-    height: 5rem;
-    width: 8rem;
+    height: 3rem;
+    width: 6rem;
     margin: auto;
 }
 
@@ -181,6 +181,13 @@ a {
 /*############################################################################*/
 /* - v - MEDIA QUERIES - v - */
 
+@media (max-width:850px) {
+    iframe {
+        width: 50%;
+        height: auto;
+    }
+}
+
 @media (min-width:850px) {
     .ableism-facts {
         margin-left: 2rem;
@@ -222,6 +229,11 @@ a {
         border-style: ridge;
         border-width: 0.2rem;
         border-radius: 1rem;
+    }
+    nav .nav-button {
+        height: 5rem;
+        width: 8rem;
+        margin: auto;
     }
 }
 
