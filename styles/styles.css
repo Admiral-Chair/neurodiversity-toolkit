@@ -12,6 +12,8 @@ CONTENTS:
 
 0. FONT 2
 
+0. SEARCH
+
 0. MEDIA QUERIES
 
 */
@@ -56,6 +58,13 @@ nav .nav-button {
     height: 3rem;
     width: 6rem;
     margin: auto;
+}
+
+.nav-button-selected {
+    border-color: #db0000;
+    border-style:groove;
+    background-color: #202020;
+    color: aliceblue;
 }
 
 nav #neurodiversity-infinity-sym {
@@ -169,7 +178,7 @@ a, button {
 /*############################################################################*/
 /* - v - FONT 2 - v - */
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, p, li {
     color: aliceblue;
 }
 
@@ -177,7 +186,33 @@ a {
     color: aqua;
 }
 
+li {
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
 /* - ^ - FONT 2 - ^ - */
+/*############################################################################*/
+/* - v - SEARCH - v - */
+
+.letter-search-a-z {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.a-z-search {
+    margin: 0.5rem;
+}
+
+.search-letter {
+    justify-content: center;
+    border-bottom: 0.2rem solid aliceblue;
+}
+
+/* - ^ - SEARCH - ^ - */
 /*############################################################################*/
 /* - v - MEDIA QUERIES - v - */
 
