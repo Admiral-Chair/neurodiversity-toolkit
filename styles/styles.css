@@ -12,7 +12,11 @@ CONTENTS:
 
 0. FONT 2
 
+0. CONTENTS
+
 0. SEARCH
+
+0. FOOTER
 
 0. MEDIA QUERIES
 
@@ -158,6 +162,7 @@ a, button {
 
 .outline-bold {
     font-style: bold;
+    font: bold;
 }
 
 .inline-bold {
@@ -180,6 +185,7 @@ a, button {
 
 h1, h2, h3, h4, p, li {
     color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -192,6 +198,23 @@ li {
 }
 
 /* - ^ - FONT 2 - ^ - */
+/*############################################################################*/
+/* - v - CONTENTS - v - */
+
+.content-list {
+    display: flex;
+    float: none;
+    background-color: #202020;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.content-list-item {
+    margin-top: 1rem;
+    margin-left: 0.5em;
+}
+
+/* - ^ - CONTENTS - ^ - */
 /*############################################################################*/
 /* - v - SEARCH - v - */
 
@@ -213,6 +236,52 @@ li {
 }
 
 /* - ^ - SEARCH - ^ - */
+/*############################################################################*/
+/* - v - ADVANCED STYLES - v - */
+
+.flexgrid-button {
+    padding: 0.5rem;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1rem;
+}
+
+.lighter-background {
+    background-color: #3f3f3f;
+    padding: 0.6rem;
+}
+
+/* - ^ - ADVANCED STYLES - ^ - */
+/*############################################################################*/
+/* - v - UNDEFINED - v - */
+/* - ^ - UNDEFINED - ^ - */
+/*############################################################################*/
+/* - v - FOOTER - v - */
+
+footer {
+    margin-top: 3rem ;
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "cinoa-logo" "cinoa-org" "copyleft-print"
+}
+
+.page-footer {
+    color: #202020;
+    margin: auto;
+}
+
+.footer-logo {
+    height: 6rem;
+    width: 6rem;
+    margin: auto;
+}
+
+/* - ^ - FOOTER - ^ - */
 /*############################################################################*/
 /* - v - MEDIA QUERIES - v - */
 
@@ -269,6 +338,13 @@ li {
         height: 5rem;
         width: 8rem;
         margin: auto;
+    }
+    .content-list {
+        float: left;
+        margin: 1rem;
+        background-color: #202020;
+        padding: 1rem;
+        text-align: left;
     }
 }
 
