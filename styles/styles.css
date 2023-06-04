@@ -16,6 +16,8 @@ CONTENTS:
 
 0. SEARCH
 
+0. ADVANCED STYLES
+
 0. FOOTER
 
 0. MEDIA QUERIES
@@ -46,7 +48,7 @@ nav {
 
 nav button {
     height: 3rem;
-    width: 6rem;
+    width: 6.5rem;
     margin: auto;
     border-style: ridge;
     border-width: 0.2rem;
@@ -60,7 +62,7 @@ nav button:hover {
 
 nav .nav-button {
     height: 3rem;
-    width: 6rem;
+    width: 6.5rem;
     margin: auto;
 }
 
@@ -179,6 +181,15 @@ a, button {
     text-decoration: underline;
 }
 
+.small-text {
+    font-size: small;
+}
+
+.small-text-centred {
+    font-size: small;
+    text-align: center;
+}
+
 /* - ^ - FONT 1 - ^ - */
 /*############################################################################*/
 /* - v - FONT 2 - v - */
@@ -249,6 +260,39 @@ li {
 .lighter-background {
     background-color: #3f3f3f;
     padding: 0.6rem;
+}
+
+/* CARD FORMAT ITEMS */
+
+.card-format {
+    background-color: #3f3f3f;
+    padding: 0.6rem;
+
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "card-image-size" "card-information"
+}
+
+.card-image {
+    margin-right: 0.8rem;
+}
+
+.card-image-size {
+    height: fit-content;
+    width: fit-content;
+}
+
+.card-title {
+    text-align: left;
+}
+
+.card-text {
+    text-align: left;
+}
+
+.card-information {
+    margin-left: 1rem;
 }
 
 /* - ^ - ADVANCED STYLES - ^ - */
