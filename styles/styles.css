@@ -169,7 +169,7 @@ a, button {
 
 .inline-bold {
     display: inline;
-    font-style: bold;
+    font-weight: 800;
 }
 
 .inline-underline {
@@ -257,9 +257,41 @@ li {
     border-radius: 1rem;
 }
 
+.flexgrid-button-community {
+    padding: 0.5rem;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1rem;
+    background-color: rgb(202, 96, 96);
+}
+
+.flexgrid-button-organisation {
+    padding: 0.5rem;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1rem;
+    background-color: rgb(56, 172, 56);
+}
+
+.flexgrid-button-actiongroup {
+    padding: 0.5rem;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1rem;
+    background-color: rgb(131, 131, 245);
+}
+
 .lighter-background {
     background-color: #3f3f3f;
     padding: 0.6rem;
+}
+
+.right-aligned-quote {
+    text-align: right;
+}
+
+.left-aligned-quote {
+    text-align: left;
 }
 
 /* CARD FORMAT ITEMS */
@@ -267,20 +299,23 @@ li {
 .card-format {
     background-color: #3f3f3f;
     padding: 0.6rem;
+    
 
     display: grid;
-    grid-template-columns: 0.2fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr;
     grid-template-areas: "card-image-size" "card-information"
 }
 
 .card-image {
-    margin-right: 0.8rem;
+    margin-right:auto;
+    margin-left: auto;
 }
 
 .card-image-size {
     height: fit-content;
     width: fit-content;
+    margin-left: 1rem;
 }
 
 .card-title {
@@ -345,6 +380,21 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: "fact1" "fact2" "fact3" "fact4" "fact5" "fact6";
+    }
+    .card-format {
+        background-color: #3f3f3f;
+        padding: 0.6rem;
+    
+        display: grid;
+        grid-template-columns: 0.2fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "card-image-size" "card-information"
+    }
+    .card-image {
+        margin-right: 0.8rem;
+    }
+    .card-image-size {
+        margin-left: auto;
     }
 }
 
